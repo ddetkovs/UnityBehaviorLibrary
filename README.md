@@ -1,7 +1,7 @@
-Behavior Library
+Unity Behavior Library
 ================
 
-BehaviorLibrary is a framework for creating behavior trees for game AI. It is free to use, modify, and redestribute as covered under the attached License (FreeBSD).
+UnityBehaviorLibrary is a framework for creating behavior trees for game AI. 
 
 Changes
 -------
@@ -24,9 +24,11 @@ The basic point is to use a vector of floating numbers representing weights/valu
 Example
 -------
 
+It is a fork of https://github.com/NetGnome/BehaviorLibrary
+
 It is simple to use and with that simplicity comes performance.
 
-Example of a simple A* following AI on a tilemap
+This means that it makes use of .NET 2.0 and so some adjustments have been made.
 
 	//setup all coniditionals and their delegate functions
 	Conditional tooClose = new Conditional(isTooClose);
@@ -69,3 +71,4 @@ Example of a simple A* following AI on a tilemap
 	//to execute the behavior
 	behavior.Behave();
 		
+
