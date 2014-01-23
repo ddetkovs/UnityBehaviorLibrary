@@ -58,7 +58,7 @@ This means that it makes use of .NET 2.0 and so some adjustments have been made.
 	Selector ifPathNewUseIt = new Selector(new Inverter(isNewPath), setPath);
 	Selector ifReachedCellGetNext = new Selector(new Inverter(reachedCell), getNextCell);
 	Selector ifNotReachedTargetMoveTowardsCell = new Selector(reachedTarget, moveToCell);
-            
+
 	//follow target so long as you're not too close and then animate
 	Sequence follow = new Sequence(new Inverter(tooClose), updatePosition, ifMovedCreateNewPath, ifPathFoundGetPath, ifPathIsNewUseIt, ifReachedCellGetNext, ifNotReachedTargetMoveTowardsCell, animate);
 
@@ -71,4 +71,6 @@ This means that it makes use of .NET 2.0 and so some adjustments have been made.
 	//to execute the behavior
 	behavior.Behave();
 		
+The tests are written to use UnityTest.
 
+For details on how to run the tests please see http://blogs.unity3d.com/2013/12/18/unity-test-tools-released/
